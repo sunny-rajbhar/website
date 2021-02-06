@@ -1,0 +1,634 @@
+/* CSS */
+*{
+    border: 0;
+    margin: 0;
+  box-sizing: border-box;
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+.row {
+    background-color: #b3d4fc;
+}
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+html {
+    font-family: Arial, serif;
+}
+
+/* This is the part of Header and Menu*/
+.header {
+  height: 130px;
+  background-image: url("../images/header_bg.jpg");
+  font-style: italic;
+  animation: cols 2s infinite alternate;
+}
+.logo {
+    text-align: center;
+}
+.edf {
+    padding: 40px 125px;
+    font-size: 20px;
+}
+#search-bar {
+    float: left;
+}
+.menu {
+  overflow: hidden;
+}
+.menu ul {
+  list-style-type:none;
+  margin:0; padding:0;
+  overflow: hidden;
+  background-color:#333;
+  text-decoration: none;
+}
+.menu input[type=text] {
+  padding: 5px;
+  font-size: 15px;
+  border: none;
+  margin-left: 10px;
+  margin-top: 10px;
+    border-radius: 4px;
+}
+.menu button {
+  padding: 5px;
+  background: #ddd;
+  font-size: 15px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+.menu button:hover {
+  background: #ccc;
+}
+ul.ul1 {list-style-type: none;}
+ul.ul2 {list-style-type: none; text-align: center}
+li {
+    float: right;
+}
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: #111;
+}
+li .dropdown {
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+.dropdown-content a:hover {background-color: #f1f1f1}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+/* --Header and Menu ended-- */
+/* This is Article part */
+.harticle {
+    margin-top: 20px;
+    height: 400px;
+    font-family: serif;
+}
+.harticle h1 {
+    font-style: oblique;
+}
+.harticle p {
+    font-style: oblique;
+    font-size: 20px;
+    font-family: monospace;
+}
+.aside {
+  background-color: blueviolet;
+  padding: 15px;
+  text-align: center;
+  font-size: 14px;
+}
+.tops {
+    background-color: #39dc79;
+    height: auto;
+    margin: 0;
+    display: inline-block;
+    width: 100%;
+}
+.tops ul {
+    list-style-type: none;
+    margin: 0;
+}
+.tops ul li {
+    background-color: #33b5e5;
+    color: #ffffff;
+
+}
+table {
+    width: 100%;
+}
+td, th {
+    border: 1px solid darkgray;
+    text-align: center;
+}
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+/* Article ended */
+/* This is footer */
+.footer {
+  height: 100px;
+  background-color:#333;
+  text-align: center;
+  font-size: 12px;
+  padding: 15px;
+  color: white;
+}
+/* footer ended */
+.tbox ul{
+    margin:1px; padding:0;
+}
+.tbox textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+li button {
+  padding: 5px;
+  background: #ddd;
+  font-size: 15px;
+  border: none;
+  cursor: pointer;
+    margin-bottom: 5px;
+}
+li button:hover {
+  background: dimgrey;
+}
+
+/* Mail part */
+.aside2 {
+    border-radius: 5px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  border: 3px solid lightslategray;
+  padding: 15px 15px;
+  background-color: blueviolet;
+  text-align: center;
+  font-size: 14px;
+
+}
+.aside2 input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.aside2 textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.aside2 input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.aside2 input[type=submit]:hover {
+    background-color: #45a049;
+}
+/* Mail ended */
+/* Map */
+.map {
+    float: right;
+    background: lightcoral;
+    border-radius: 4px;
+    padding: 10px ;
+    margin: 5px;
+}
+.imap {
+    height: 300px;
+    background: yellow;
+}
+/* Map ended */
+
+/* This cols is for media queries */
+.col-1 {width: 25%}
+.col-2 {width: 50%}
+.col-3 {width: 75%}
+.col-4 {width: 100%}
+.col-5 {width: 70%}
+.col-6 {width: 30%}
+.col-7 {width: 20%}
+.col-8 {width: 80%}
+/* ended */
+
+
+/* Footer */
+.footer-distributed{
+	background-color: #292c2f;
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: bold 16px sans-serif;
+	padding: 25px 40px;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center{
+	display: inline-block;
+	vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left{
+	width: 40%;
+}
+
+/* The company logo */
+
+.footer-distributed h3{
+	color:  #ffffff;
+	font: normal 36px 'Cookie', cursive;
+	margin: 0;
+}
+
+.footer-distributed h3 span{
+	color:  #5383d3;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links{
+	color:  #ffffff;
+	margin: 20px 0 12px;
+	padding: 0;
+}
+.footer-distributed .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+	text-decoration: none;
+	color:  inherit;
+}
+.footer-distributed .footer-company-name{
+	color:  #8f9296;
+	font-size: 14px;
+	font-weight: normal;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center{
+	width: 35%;
+}
+
+.footer-distributed .footer-center i{
+	background-color:  #33383b;
+	color: #ffffff;
+	font-size: 25px;
+	width: 38px;
+	height: 38px;
+	text-align: center;
+	line-height: 42px;
+	margin: 10px 15px;
+	vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope{
+	font-size: 17px;
+	line-height: 38px;
+}
+
+.footer-distributed .footer-center p{
+	display: inline-block;
+	color: #ffffff;
+	vertical-align: middle;
+	margin:0;
+}
+
+.footer-distributed .footer-center p span{
+	display:block;
+	font-weight: normal;
+	font-size:14px;
+	line-height:2;
+}
+
+.footer-distributed .footer-center p a{
+	color:  #5383d3;
+	text-decoration: none;;
+}
+
+.footer-distributed .footer-company-about span{
+	display: block;
+	color:  #ffffff;
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+/* Login form */
+.welcome {
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-align: center;
+    margin-top: 20px;
+    color: #8f9296
+}
+.login-body{
+    margin: 0;
+    padding: 0;
+    background: url(../images/login_bg.jpg);
+    background-position: center;
+    font-family: sans-serif;
+    background-repeat: no-repeat;
+    background-size: 1400px 1400px;
+}
+.login-box{
+    width: 320px;
+    height: 420px;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+}
+.avatar{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: -50px;
+    left: calc(50% - 50px);
+}
+#login-h1{
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 22px;
+}
+.login-box p{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+.login-box input{
+    width: 100%;
+    margin-bottom: 5px;
+}
+.login-box .span {
+    height: 15px;
+    text-align: center;
+    color: wheat;
+    padding: 2px;
+    font-size: 15px;
+}
+.login-box input[type="text"] {
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 30px;
+    color: #fff;
+    font-size: 16px;
+}
+.login-box input[type="password"] {
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 30px;
+    color: #fff;
+    font-size: 16px;
+}
+.login-box input[type="submit"] {
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #1c8adb;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+    margin-top: 3px;
+}
+.login-box .reg-btn {
+    display: block;
+    color: white;
+    text-align: center;
+    height: 40px;
+    background-color: #1c8adb;
+    border-radius: 20px;
+    font-size: 18px;
+    padding: 10px;
+}
+.login-box .reg-btn:hover {
+    cursor: pointer;
+    background: #39dc79;
+    color: #000;
+}
+.login-box input[type="submit"]:hover {
+    cursor: pointer;
+    background: #39dc79;
+    color: #000;
+}
+
+.login-box a{
+    text-decoration: none;
+    font-size: 14px;
+    color: #fff;
+}
+.login-box a:hover {
+    color: #39dc79;
+}
+/* Login */
+/* Register */
+.register-box{
+    width: 320px;
+    height: 500px;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+}
+.register-box p{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+.register-box input{
+    width: 100%;
+    margin-bottom: 5px;
+}
+.register-box .span {
+    height: 10px;
+    text-align: center;
+    color: wheat;
+    padding: 2px;
+    font-size: 12px;
+}
+.register-box input[type="text"], input[type="password"]
+{
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 20px;
+    color: #fff;
+    font-size: 14px;
+}
+.register-box input[type="submit"]
+{
+    border: none;
+    outline: none;
+    height: 30px;
+    background: #1c8adb;
+    color: #fff;
+    font-size: 15px;
+    border-radius: 20px;
+}
+.register-box input[type="submit"]:hover
+{
+    cursor: pointer;
+    background: #39dc79;
+    color: #000;
+}
+.register-box .reg-btn {
+    display: block;
+    color: white;
+    text-align: center;
+    background-color: #1c8adb;
+    border-radius: 20px;
+    font-size: 15px;
+    padding: 6px;
+}
+.register-box .reg-btn:hover {
+    cursor: pointer;
+    background: #39dc79;
+    color: #000;
+}
+.register-box a{
+    text-decoration: none;
+    font-size: 15px;
+    color: #fff;
+}
+.register-box a:hover
+{
+    color: #39dc79;
+}
+
+/* Post textbox */
+#comment_content{
+    width: 800px;
+    height: 110px;
+    border-radius: 4px;
+    resize: none;
+    margin: 5px;
+}
+.msg button, .tbox button, .btn, .ann button {
+    width: 80px;
+    height: 30px;
+    background-color: #282828;
+    border: none;
+    color: white;
+    font-weight: 400px;
+    border-radius: 4px;
+    margin: 5px;
+}
+
+.post-box {
+    width: 815px;
+    padding: 20px;
+    margin-bottom: 4px;
+    background-color: white;
+    border-radius: 4px;
+}
+.post-box button{
+    width: 80px;
+    height: 30px;
+    background-color: #282828;
+    border: none;
+    color: white;
+    font-weight: 400px;
+    border-radius: 4px;
+    margin: 5px;
+}
+
+/* for message box */
+.panel {
+    margin: 10px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 1px 1px rgba(0,0,0,.05);
+    box-shadow: 0 1px 1px rgba(0,0,0,.05);
+}
+.panel-default {
+    border-color: #ddd;
+}
+.panel-default>.panel-heading {
+    color: #333;
+    background-color: #f5f5f5;
+    border-color: #ddd;
+}
+.panel-heading {
+    padding: 10px 15px;
+    border-bottom: 1px solid transparent;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+
+.panel-body {
+    padding: 15px;
+}
+
+.panel-footer {
+    height: 50px !important;
+}
+
+/* Admin Announce box */
+.ann input[type=text] {
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.ann textarea{
+    width: 800px;
+    height: 110px;
+    border-radius: 4px;
+    resize: none;
+    margin: 5px;
+}

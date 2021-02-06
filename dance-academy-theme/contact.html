@@ -1,0 +1,145 @@
+<!-- Created by Sunny::Dec 2019 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dance Academy</title>
+    <link rel="icon" href="img/logo.png">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</head>
+<body>
+    <header id="navbar">
+      <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
+        <div class="navbar-brand">
+          <img src="img/logo.png" width="27" height="35" alt="">
+          Dance Academy
+        </div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="services.html">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="gallary.html">Gallary</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-success" href="login.html">Sign Up</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <div id="navbar-2" class="my-1 py-1"><h2>Navbar</h2></div>
+
+    <section id="contact-carousel" class="p-5">
+      <div class="contact-carousel" class="p-4">
+        <h2 class="text-center text-light">Contact Us</h2>
+      </div>
+    </section>
+
+    <section id="contact-form" class="bg-secondary">
+        <div class="form-container container">
+            <div class="row d-flex justify-content-around py-3">
+                <div class="inner-form col-lg-6 col-md-6 col-11">
+                  <h3 class="text-center text-light">Any Queries?</h3>
+                    <form class="mx-lg-5 m-lg-4 my-lg-4 px-lg-5 bg-light rounded" action="contact.php" method="POST">
+                        <div class="form-group p-4">
+                            <input type="text" class="form-control" name="name" placeholder="Name"><br>
+                            <input type="email" class="form-control" name="email" placeholder="Email"><br>
+                            <input type="text" class="form-control" name="subject" placeholder="Subject"><br>
+                            <textarea name="msg" class="form-control" cols="20" rows="5" placeholder="Message..."></textarea><br>
+                            <input type="submit" name="submit" class="btn btn-secondary" value="Submit">
+                        </div>
+                    </form>
+                </div>
+                <hr class="my-2 d-lg-none d-md-none bg-light">
+                <div class="map col-lg-6 col-md-6 col-11">
+                    <h3 class="text-light text-center">Location</h3>
+                  <div class="map-inner pt-lg-4 mt-lg-4">
+                    <iframe class="rounded" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d942.5102475390466!2d73.00674775053915!3d19.105857624231653!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c0da59d0a01b%3A0x56642a54a185f894!2sLokmanya%20Tilak%20College%20of%20Engineering!5e0!3m2!1sen!2sin!4v1576485313218!5m2!1sen!2sin" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="footer" class="footer">
+      <div class="container-fluid">
+        <div class="row d-flex justify-content-center pt-lg-4 pb-lg-3 py-md-5 py-4 ">
+          <div class="f-div col-lg-3 col-md-5 col-9 px-lg-4 p-3 text-center text-lg-left">
+            <img class="border-bottom border-dark" src="img/logo.png" width="45" height="65" alt="">
+            <p class="font-weight-bold mb-0">Dance Managemant</p>
+            <h5 class="mb-0"><small class="font-weight-bold">About Us</small></h5>
+            <p class="mb-0"><small>We have established a comprehensive collection of classes in order to offer you a complete dance education.</small></p>
+          </div>
+          <div class="f-div col-lg-3 col-md-5 col-9 p-lg-2 text-lg-left text-md-left text-center">
+            <h4 class="font-weight-bold">QUICK LINKS</h4>
+            <hr class="my-lg-1 ml-lg-0 ml-md-0 border-top border-dark">
+            <ul class="list-unstyled">
+              <li><a class="text-dark" href="#">Home</a></li>
+              <li><a class="text-dark" href="about.html">About</a></li>
+              <li><a class="text-dark" href="services.html">Service</a></li>
+              <li><a class="text-dark" href="gallary.html">Gallary</a></li>
+              <li><a class="text-dark" href="#">Contact</a></li>
+            </ul>
+          </div>
+          <div class="f-div col-lg-3 col-md-5 col-9 p-lg-2 text-center text-lg-left text-md-left">
+            <div>
+              <h4 class="font-weight-bold">ADDRESS</h4>
+              <hr class="my-1 ml-lg-0 ml-md-0 border-dark">
+              <p>Kopar Khairane, Sector 4, Vikas Nagar, Navi Mumbai, Maharashtra 400709</p>
+            </div>
+            <div>
+              <h4 class="font-weight-bold">CONTACT</h4>
+              <hr class="my-lg-1 ml-lg-0 ml-md-0 border-dark">
+              <p><i class="fas fa-phone-alt"></i> +91 (987) 654-3210 <br>
+                <i class="fas fa-envelope"></i> danceacademy@email.com
+              </p>
+            </div>
+          </div>
+          <div class="f-div col-lg-3 col-md-5 col-9 p-lg-2 text-center text-lg-left text-md-left ">
+            <h4 class="font-weight-bold">CONNECT</h4>
+            <hr class="my-lg-1 ml-lg-0 ml-md-0 border-dark">
+              <a class="fb-ic">
+                <i class="fab fa-facebook-f fa-lg p-2"></i>Facebook
+              </a><br>
+              <a class="tw-ic">
+                <i class="fab fa-twitter fa-lg p-2"></i>Twitter
+              </a><br>
+              <a class="gplus-ic">
+                <i class="fab fa-google-plus-g fa-lg p-2"></i>Google+
+              </a><br>
+              <a class="li-ic">
+                <i class="fab fa-linkedin-in fa-lg p-2"></i>LinkdIn
+              </a><br>
+              <a class="ins-ic">
+                <i class="fab fa-instagram fa-lg p-2"></i>Instagram
+              </a> 
+          </div>
+        </div>
+      </div> 
+      <div class="footer-copyright bg-dark text-center py-3"><span class="text-secondary"><i class="far fa-copyright"></i> 2019 Copyright: All rights reserved by Sunny Rajbhar.</span>
+      </div>
+    </footer>
+    
+    <div class="go-top"><a href="#navbar-2" class="btn rounded-circle btn-lg btn-dark"><i class="fas fa-chevron-up"></i></a></div>
+</body>
+</html>

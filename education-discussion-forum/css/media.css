@@ -1,0 +1,122 @@
+/* Media Queries */
+@media screen and (max-width: 640px) {
+  .header, .logo{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-image: url("../images/media_header_wall.jpg");
+  }
+  .edf {
+    margin: 0;
+    padding: 0;
+    font-size: 13px;
+    text-align: center;
+    background-image: url("../images/media_header_wall.jpg");
+  }
+  
+  .harticle {
+    padding: 5px;
+    width: 100%;
+
+  }
+  .menu ul, li, .menu input[type=text], .menu button, li a, .dropbtn , .ul2, .row1 .menu .ul1 li {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 9px;
+  }
+  .msg textarea, .ann textarea{
+    width: 300px;
+    height: 75px;
+    border-radius: 4px;
+    resize: none;
+  }
+  #comment_content, .post-box {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 4px;
+    background-color: white;
+    border-radius: 4px;
+    resize: none;
+  }
+  
+  .map{
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 10px;
+  }
+  .menu input[type=text] {
+    border: 1px solid #ccc;
+  }
+  .right #gif{
+      width: 100%;
+  }
+  .aside2 {
+      float: none;
+      margin: auto;
+  }
+  #tarea {
+      width: 100%;
+      padding: 12px 12px;
+  }
+  #gif {
+      width: 24px;
+      height: 140px;
+      padding: 5px 5px;
+
+  }
+  .avatar{
+      width: 70px;
+      height: 70px;
+      top: -25px;
+      left: calc(50% - 30px);
+
+  }
+  .login-box{
+      width: 100%;
+      border: dotted;
+      border-radius: 10px;
+
+  }
+  .harticle {
+    height: auto;
+  }
+  .harticle p{
+    font-size: 17px;
+  }
+
+}
+
+@media (max-width: 880px) {
+	.footer-distributed{
+		font: bold 14px sans-serif;
+	}
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-center {
+		width: 100%;
+		margin-bottom: 30px;
+		text-align: center;
+	}
+	.footer-distributed .footer-center i{
+		margin: 0;
+	}
+}
+
+@media only screen and (max-width: 640px) {
+  [class*="col-"]{
+    width: 100%;
+  }
+}
+
+/* Animation */
+@keyframes cols {
+    0%{color: white;}
+    25%{color: wheat;}
+    50%{color: darkgray;}
+    100%{color: rgba(23, 108, 165, 0.253);}
+}
